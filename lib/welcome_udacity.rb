@@ -1,5 +1,6 @@
 require 'twitter'
 require 'language_converter'
+require 'open-uri'
 
 class WelcomeUdacity
 
@@ -89,7 +90,6 @@ class WelcomeUdacity
     def tweet_with_picture(options={})
         url = get_url_of_image_from_google("#{options[:country]} #{options[:capital]}")
         uri = URI.parse(url)
-        puts url
         media = uri.open
         media.instance_eval("def original_filename; '#{File.basename(uri.path)}'; end")
         text_to_tweet = get_twitter_text(options[:language])
