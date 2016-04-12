@@ -5,7 +5,7 @@ Tweet with a "Hello" in the country language and a picture of the capital geotag
 
 # About
 
-Created for participating in Udacity promo in Europe
+Version 2 of the program that was Created for participating in Udacity promo in Europe https://github.com/vidjon/welcome-udacity
 
 # How to use
 
